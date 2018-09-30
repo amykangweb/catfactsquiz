@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cat Facts Quiz</string>
+
+    <!-- Question type headers -->
+    <string name="header_true_or_false">True or False?</string>
+    <string name="header_choose_one">Choose One</string>
+    <string name="header_choose_multiple">Choose Multiple</string>
+    <string name="header_fill_in_the_blank">Fill in the Blank</string>
+
+    <!-- Fact strings -->
+    <string name="fact_1">A cat will almost never meow at another cat.</string>
+    <string name="fact_2">A cat will spend nearly __ of its life grooming itself.</string>
+
+    <!-- Fact 3 Checkbox options -->
+    <string name="fact_3_one">A cat\'s jaws can move sideways.</string>
+    <string name="fact_3_two">A cat can be either right-pawed or left-pawed.</string>
+    <string name="fact_3_three">A cat can jump as much as seven times its height.</string>
+
+    <!-- Fact questions -->
+    <string name="fact_4">What is another word for cat? Hint: It starts with an \'f\'.</string>
+
+    <!-- Fill in the blank hint -->
+    <string name="hint">Enter answer</string>
+
+    <!-- Question instructions -->
+    <string name="multiple_instructions">Check all statements that are true.</string>
+
+    <!-- Submit answers button -->
+    <string name="submit_button">Submit Answers</string>
+</resources>

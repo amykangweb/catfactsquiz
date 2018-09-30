@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Cat facts found at: http://www.petcarefoundation.org/trivia.asp -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Cat Fact 1 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/catmeowing_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/HeaderTextStyle"
+                    android:text="@string/header_true_or_false" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/fact_1" />
+
+                <RadioGroup
+                    android:id="@+id/fact_1_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <RadioButton
+                        android:id="@+id/fact_1_true"
+                        style="@style/ChoicesTextStyle"
+                        android:text="True"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/fact_1_false"
+                        style="@style/ChoicesTextStyle"
+                        android:text="False"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Cat Fact 1 End -->
+
+        <!-- Cat Fact 2 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/groomingcat_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    style="@style/HeaderTextStyle"
+                    android:text="@string/header_choose_one" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/fact_2" />
+
+                <RadioGroup
+                    android:id="@+id/fact_2_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <RadioButton
+                        android:id="@+id/fact_2_choice_one"
+                        style="@style/ChoicesTextStyle"
+                        android:textStyle="bold"
+                        android:text="10%" />
+                    <RadioButton
+                        android:id="@+id/fact_2_choice_two"
+                        style="@style/ChoicesTextStyle"
+                        android:textStyle="bold"
+                        android:text="20%" />
+                    <RadioButton
+                        android:id="@+id/fact_2_choice_three"
+                        style="@style/ChoicesTextStyle"
+                        android:textStyle="bold"
+                        android:text="30%" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Cat Fact 2 End -->
+
+        <!-- Cat Fact 3 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/catimage1_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    style="@style/HeaderTextStyle"
+                    android:text="@string/header_choose_multiple" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/multiple_instructions" />
+
+                <CheckBox
+                    style="@style/ChoicesTextStyle"
+                    android:id="@+id/fact_3_checkbox_one"
+                    android:text="@string/fact_3_one" />
+
+                <CheckBox
+                    style="@style/ChoicesTextStyle"
+                    android:id="@+id/fact_3_checkbox_two"
+                    android:text="@string/fact_3_two" />
+
+                <CheckBox
+                    style="@style/ChoicesTextStyle"
+                    android:id="@+id/fact_3_checkbox_three"
+                    android:text="@string/fact_3_three" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Cat Fact 3 End -->
+
+        <!-- Cat Fact 4 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/catimage2_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/HeaderTextStyle"
+                    android:text="@string/header_fill_in_the_blank" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/fact_4" />
+
+                <EditText
+                    android:id="@+id/fact_4_input"
+                    style="@style/AnswerInputStyle"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/hint" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Cat Fact 4 End -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="@string/submit_button"
+            android:onClick="submitAnswers" />
+
+    </LinearLayout>
+
+</ScrollView>
